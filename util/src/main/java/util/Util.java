@@ -27,7 +27,7 @@ public class Util {
         Collection<LocalDate> dates = new ArrayList<>();
 
         for (int i = 0; i < count; i++) {
-            dates.add(LocalDate.now().minusDays(i * 43));
+            dates.add(LocalDate.now().minusDays(i * i + 43));
         }
 
         return dates;
